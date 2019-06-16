@@ -1,6 +1,6 @@
 (defun collect(*string*) ;funcao que pega os valores para a operação
     (format t "~s selecionado, escolha o primeiro valor: " *string*)
-    (setq *v1* (read))
+    (setq *v1* (read)
     (format t "Escolha o segundo: ")
     (setq *v2* (read)))
 
@@ -30,11 +30,11 @@
     (format t
     "Calculadora
     1 - Soma
-    2 - Subtração
-    3 - Multiplicação
-    4 - Divisão
-    5 - Potência
-    6 - Radiciação
+    2 - Subtracao
+    3 - Multiplicacao
+    4 - Divisao
+    5 - Potencia
+    6 - Radiciacao
     7 - Logaritmo
     0 - Sair
     Escolha: ")
@@ -48,25 +48,25 @@
         (resultado)
         (mainloop))
 
-        (2 (setq *string* "Subtração")
+        (2 (setq *string* "Subtracao")
         (collect *string*)
         (subtrair *v1* *v2*)
         (resultado)
         (mainloop))
 
-        (3 (setq *string* "Multiplicação")
+        (3 (setq *string* "Multiplicacao")
         (collect *string*)
         (mult *v1* *v2*)
         (resultado)
         (mainloop))
 
-        (4 (setq *string* "Divisão")
+        (4 (setq *string* "Divisao")
         (collect *string*)
         (divis *v1* *v2*)
         (resultado)
         (mainloop))
 
-        (5 (setq *string* "Potência")
+        (5 (setq *string* "Potencia")
         (collect *string*)
         (pow *v1* *v2*)
         (resultado)
