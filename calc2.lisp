@@ -39,9 +39,9 @@
     0 - Sair
     Escolha: ")
 
-    (setq *select* (read))
+    (setq *cod-escolha* (read))
 
-    (case *select* 
+    (case *cod-escolha* 
         (1 (setq *escolha* "Soma")
         (entrada *escolha*)
         (soma *v1* *v2*)
